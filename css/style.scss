@@ -131,7 +131,7 @@ p {
 // text carousel
 
 $numberOfElements: 4; 
-$fontSize: 50px;
+$fontSize: 40px;
 
 .frame {
   border-radius: 2px;
@@ -144,8 +144,8 @@ $fontSize: 50px;
 
 .center {
   position: absolute;
-  top: 50%;
-  left: 0;
+  top: 60%;
+  left: 20%;
   right: 0;
   margin-top: ($fontSize * 1.5) / -2;
 }
@@ -205,4 +205,15 @@ $fontSize: 50px;
   100% {
     transform: translateY($fontSize * -6);
   }
+}
+
+
+//pride icon
+img {
+  max-width: 40px;
+  border: 2px solid white;
+  border-radius: 50px;
+  margin: 0 18px;
+  display: inline-block;
+  text-align: center;
 }
