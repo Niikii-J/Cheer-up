@@ -28,8 +28,8 @@ body {
   font-size: 3rem;
   overflow: hidden;
   background-size: 400% 400%;
-  -webkit-animation: gradient 25s ease infinite;
-          animation: gradient 25s ease infinite;
+  -webkit-animation: gradient 45s ease infinite;
+          animation: gradient 45s ease infinite;
   animation: colorchange 75s linear 1s infinite;
   -webkit-animation: colorchange 75s linear 0s infinite alternate;
   font-size: 20px;
@@ -60,7 +60,7 @@ p span {
   display: block;
   margin: 0 auto;
   /* Clip Background-text Image */
-  background: url("../img/animated-text-fill.png") repeat-y;
+  background: url("../img/rainbow1-1.png") repeat-y;
   -webkit-background-clip: text;
   background-clip: text;
   /* Animate Background-text Image */
