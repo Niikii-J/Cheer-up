@@ -146,15 +146,6 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 300px) {
-  p {
-    font-weight: bold;
-  }
-  p span {
-    font: 100 10px 'Kaushan Script', cursive;
-  }
-}
-
 .frame {
   border-radius: 2px;
   overflow: hidden;
@@ -200,8 +191,8 @@ p {
 
 .carousel .change_outer .change_inner {
   position: relative;
-  -webkit-animation: rotate 8s ease-in-out infinite;
-          animation: rotate 8s ease-in-out infinite;
+  -webkit-animation: rotate 9s ease-in-out infinite;
+          animation: rotate 9s ease-in-out infinite;
 }
 
 .carousel .change_outer .element {
@@ -256,11 +247,30 @@ p {
   }
 }
 
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 img {
   border: 2px solid white;
   border-radius: 50px;
   margin: 0 18px;
   max-width: 32px;
   text-shadow: 2px 2px 2px #0000008e;
+}
+
+@media (max-width: 360px) {
+  p {
+    font-weight: bold;
+  }
+  p span {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

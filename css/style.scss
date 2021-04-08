@@ -119,14 +119,6 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
   }
 
-  @media (max-width: 300px) {
-    p {
-      font-weight: bold;      
-      span {
-        font: 100 10px 'Kaushan Script', cursive;
-          }
-      }
-    }
 
 // text carousel
 
@@ -176,7 +168,7 @@ $fontSize: 40px;
     
     .change_inner {
       position: relative;
-      animation: rotate 8s ease-in-out infinite;
+      animation: rotate 9s ease-in-out infinite;
     }
     
     .element {
@@ -208,6 +200,12 @@ $fontSize: 40px;
 
 
 //pride icon
+
+.img-container {
+  display: flex;
+  align-items:center;
+}
+
 img {
   border: 2px solid white;
   border-radius: 50px;
@@ -215,3 +213,16 @@ img {
   max-width: 32px;
   text-shadow: 2px 2px 2px #0000008e;
 }
+
+
+//responsive
+
+@media (max-width: 360px) {
+  p {
+    font-weight: bold;      
+    span {
+      font-size: 30px;
+      letter-spacing: 5px;
+        }
+    }
+  }
