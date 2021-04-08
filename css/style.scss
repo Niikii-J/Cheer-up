@@ -53,10 +53,12 @@ p {
 	left: 50%;
 	width: 40em;
 	margin: 0 0 0 -20em;
+  text-transform: uppercase;
   
   span {
     text-transform: uppercase;
-  	font: 700 3em/1 'Kaushan Script', cursive;
+    font-size: 70px;
+  	font-family: 'Kaushan Script', cursive;
   	letter-spacing: 10px;
   	padding: .25em 0 .325em;
 	  display: block;
@@ -91,28 +93,37 @@ p {
 
 @keyframes colorchange
 {
-  0%   {background: rgba(192, 3, 3, 0.4)}
-  14%  {background: rgba(194, 111, 3, 0.8)}
-  28%  {background: rgb(219, 235, 4, 0.4)}
-  42% {background: rgba(2, 170, 24, 0.8)}
-  56%  {background: rgba(3, 172, 194, 0.4)}
-  70%  {background: rgba(2, 12, 146, 0.8)}
-  84%  {background: rgba(194, 3, 121, 0.4)}
-  100%  {background: rgba(194, 3, 3, 0.8)}
+  0%   {background: rgba(192, 3, 3, 0.8)}
+  14%  {background: rgba(194, 111, 3, 0.5)}
+  28%  {background: rgba(219, 235, 4, 0.8)}
+  42% {background: rgba(2, 170, 24, 0.5)}
+  56%  {background: rgba(3, 172, 194, 0.8)}
+  70%  {background: rgba(2, 12, 146, 0.5)}
+  84%  {background: rgba(194, 3, 121, 0.8)}
+  100%  {background: rgba(194, 3, 3, 0.5)}
 }
 
 @-webkit-keyframes colorchange
 {
-  0%   {background: rgba(192, 3, 3, 0.4)}
-  14%  {background: rgba(194, 111, 3, 0.8)}
-  28%  {background: rgb(219, 235, 4, 0.4)}
-  42% {background: rgba(2, 170, 24, 0.8)}
-  56%  {background: rgba(3, 172, 194, 0.4)}
-  70%  {background: rgba(2, 12, 146, 0.8)}
-  84%  {background: rgba(194, 3, 121, 0.4)}
-  100%  {background: rgba(194, 3, 3, 0.8)}
+  0%   {background: rgba(192, 3, 3, 0.8)}
+  14%  {background: rgba(194, 111, 3, 0.5)}
+  28%  {background: rgba(219, 235, 4, 0.8)}
+  42% {background: rgba(2, 170, 24, 0.5)}
+  56%  {background: rgba(3, 172, 194, 0.8)}
+  70%  {background: rgba(2, 12, 146, 0.5)}
+  84%  {background: rgba(194, 3, 121, 0.8)}
+  100%  {background: rgba(194, 3, 3, 0.5)}
 }
 
 p {
-  background-color: rgba(0, 0, 0, 0.514);
+  background-color: rgba(0, 0, 0, 0.5);
   }
+
+  @media (max-width: 300px) {
+    p {
+      font-weight: bold;      
+      span {
+        font: 100 10px 'Kaushan Script', cursive;
+          }
+      }
+    }
