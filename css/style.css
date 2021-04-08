@@ -264,9 +264,20 @@ img {
   text-shadow: 2px 2px 2px #0000008e;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 690px) {
   p {
     font-weight: bold;
+  }
+  p span {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  p {
+    font-weight: bold;
+    font-size: 12px;
   }
   p span {
     font-size: 30px;

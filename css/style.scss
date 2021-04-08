@@ -217,12 +217,23 @@ img {
 
 //responsive
 
-@media (max-width: 360px) {
+@media (max-width: 690px) {
   p {
     font-weight: bold;      
     span {
-      font-size: 30px;
+      font-size: 50px;
       letter-spacing: 5px;
         }
     }
   }
+
+  @media (max-width: 480px) {
+    p {
+      font-weight: bold;   
+      font-size: 12px;   
+      span {
+        font-size: 30px;
+        letter-spacing: 5px;
+          }
+      }
+    }
