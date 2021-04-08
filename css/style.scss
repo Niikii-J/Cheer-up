@@ -163,7 +163,7 @@ $fontSize: 40px;
     top: 0;
     right: 54.5%;
     height: $fontSize * 1.5;
-    text-shadow: 2px 2px 2px #e67e22;
+    text-shadow: 2px 2px 2px #0000008e;
   }
   
   .change_outer {
@@ -182,7 +182,7 @@ $fontSize: 40px;
     .element {
       display: block;
       font-weight: 700;
-      text-shadow: 2px 2px 2px #e67e22;
+      text-shadow: 2px 2px 2px #0000008e;
     }
     
   }
@@ -210,10 +210,9 @@ $fontSize: 40px;
 
 //pride icon
 img {
-  max-width: 40px;
   border: 2px solid white;
   border-radius: 50px;
   margin: 0 18px;
-  display: inline-block;
-  text-align: center;
+  max-width: 60px;
+  text-shadow: 2px 2px 2px #0000008e;
 }
