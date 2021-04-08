@@ -87,33 +87,32 @@ p {
 	100% { background-position: 100% 50%; }
 }
 
-
 //rainbow bg
 
 @keyframes colorchange
 {
   0%   {background: rgba(192, 3, 3, 0.4)}
-  14%  {background: rgba(194, 111, 3, 0.4)}
-  28%  {background: rgb(219, 235, 4)}
-  42% {background: rgba(2, 170, 24, 0.4)}
+  14%  {background: rgba(194, 111, 3, 0.8)}
+  28%  {background: rgb(219, 235, 4, 0.4)}
+  42% {background: rgba(2, 170, 24, 0.8)}
   56%  {background: rgba(3, 172, 194, 0.4)}
-  70%  {background: rgba(2, 12, 146, 0.4)}
+  70%  {background: rgba(2, 12, 146, 0.8)}
   84%  {background: rgba(194, 3, 121, 0.4)}
-  100%  {background: rgba(194, 3, 3, 0.4)}
+  100%  {background: rgba(194, 3, 3, 0.8)}
 }
 
 @-webkit-keyframes colorchange
 {
   0%   {background: rgba(192, 3, 3, 0.4)}
-  14%  {background: rgba(194, 111, 3, 0.4)}
-  28%  {background: rgb(219, 235, 4)}
-  42% {background: rgba(2, 170, 24, 0.4)}
+  14%  {background: rgba(194, 111, 3, 0.8)}
+  28%  {background: rgb(219, 235, 4, 0.4)}
+  42% {background: rgba(2, 170, 24, 0.8)}
   56%  {background: rgba(3, 172, 194, 0.4)}
-  70%  {background: rgba(2, 12, 146, 0.4)}
+  70%  {background: rgba(2, 12, 146, 0.8)}
   84%  {background: rgba(194, 3, 121, 0.4)}
-  100%  {background: rgba(194, 3, 3, 0.4)}
+  100%  {background: rgba(194, 3, 3, 0.8)}
 }
 
-.black-box{
+p {
   background-color: rgba(0, 0, 0, 0.514);
-}
+  }
