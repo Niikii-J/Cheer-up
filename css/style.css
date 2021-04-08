@@ -255,12 +255,6 @@ img {
   text-shadow: 2px 2px 2px #0000008e;
 }
 
-@media (max-width: 1230px) {
-  .carousel {
-    font-size: 34px;
-  }
-}
-
 @media (max-width: 690px) {
   p {
     font-weight: bold;
