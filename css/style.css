@@ -146,15 +146,6 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.frame {
-  border-radius: 2px;
-  overflow: hidden;
-  background: transparent;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .center {
   position: absolute;
   top: 60%;
@@ -166,7 +157,7 @@ p {
 .carousel {
   position: relative;
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-size: 40px;
   line-height: 60px;
   height: 60px;
@@ -177,7 +168,7 @@ p {
   top: 0;
   right: 54.5%;
   height: 60px;
-  text-shadow: 2px 2px 2px #0000008e;
+  text-shadow: 2px 2px 2px #00000048;
 }
 
 .carousel .change_outer {
@@ -264,6 +255,12 @@ img {
   text-shadow: 2px 2px 2px #0000008e;
 }
 
+@media (max-width: 1230px) {
+  .carousel {
+    font-size: 34px;
+  }
+}
+
 @media (max-width: 690px) {
   p {
     font-weight: bold;
@@ -281,7 +278,6 @@ img {
   }
   p span {
     font-size: 30px;
-    letter-spacing: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
