@@ -1,0 +1,137 @@
+* {
+  font-family: 'Chivo', sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h6 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  overflow: hidden;
+  background-size: 400% 400%;
+  -webkit-animation: gradient 45s ease infinite;
+          animation: gradient 45s ease infinite;
+  animation: colorchange 75s linear 1s infinite;
+  -webkit-animation: colorchange 75s linear 0s infinite alternate;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.952);
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  letter-spacing: .5em;
+  display: inline-block;
+  font-weight: bolder;
+  border: 4px dashed rgba(255, 255, 255, 0.541);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+
+p span {
+  text-transform: uppercase;
+  font: 700 3em/1 'Kaushan Script', cursive;
+  letter-spacing: 10px;
+  padding: .25em 0 .325em;
+  display: block;
+  margin: 0 auto;
+  /* Clip Background-text Image */
+  background: url("../img/rainbow1-1.png") repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background-text Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background-text Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    background: #c00303;
+  }
+  14% {
+    background: #c26f03;
+  }
+  28% {
+    background: #dbeb04;
+  }
+  42% {
+    background: #02aa18;
+  }
+  56% {
+    background: #03acc2;
+  }
+  70% {
+    background: #020b92;
+  }
+  84% {
+    background: #c20379;
+  }
+  100% {
+    background: #c20303;
+  }
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    background: #c00303;
+  }
+  14% {
+    background: #c26f03;
+  }
+  28% {
+    background: #dbeb04;
+  }
+  42% {
+    background: #02aa18;
+  }
+  56% {
+    background: #03acc2;
+  }
+  70% {
+    background: #020b92;
+  }
+  84% {
+    background: #c20379;
+  }
+  100% {
+    background: #c20303;
+  }
+}
+/*# sourceMappingURL=style.css.map */
