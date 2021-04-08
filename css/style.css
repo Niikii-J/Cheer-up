@@ -11,6 +11,11 @@ html {
   overflow: hidden;
 }
 
+html {
+  background: url("../img/leaves.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
 h1, h2, h3, h4, h6 {
   font-family: 'Kaushan Script', cursive;
 }
@@ -83,55 +88,59 @@ p span {
 
 @keyframes colorchange {
   0% {
-    background: #c00303;
+    background: rgba(192, 3, 3, 0.4);
   }
   14% {
-    background: #c26f03;
+    background: rgba(194, 111, 3, 0.4);
   }
   28% {
     background: #dbeb04;
   }
   42% {
-    background: #02aa18;
+    background: rgba(2, 170, 24, 0.4);
   }
   56% {
-    background: #03acc2;
+    background: rgba(3, 172, 194, 0.4);
   }
   70% {
-    background: #020b92;
+    background: rgba(2, 12, 146, 0.4);
   }
   84% {
-    background: #c20379;
+    background: rgba(194, 3, 121, 0.4);
   }
   100% {
-    background: #c20303;
+    background: rgba(194, 3, 3, 0.4);
   }
 }
 
 @-webkit-keyframes colorchange {
   0% {
-    background: #c00303;
+    background: rgba(192, 3, 3, 0.4);
   }
   14% {
-    background: #c26f03;
+    background: rgba(194, 111, 3, 0.4);
   }
   28% {
     background: #dbeb04;
   }
   42% {
-    background: #02aa18;
+    background: rgba(2, 170, 24, 0.4);
   }
   56% {
-    background: #03acc2;
+    background: rgba(3, 172, 194, 0.4);
   }
   70% {
-    background: #020b92;
+    background: rgba(2, 12, 146, 0.4);
   }
   84% {
-    background: #c20379;
+    background: rgba(194, 3, 121, 0.4);
   }
   100% {
-    background: #c20303;
+    background: rgba(194, 3, 3, 0.4);
   }
+}
+
+.black-box {
+  background-color: rgba(0, 0, 0, 0.514);
 }
 /*# sourceMappingURL=style.css.map */

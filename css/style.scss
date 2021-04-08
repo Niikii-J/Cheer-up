@@ -11,6 +11,14 @@ html {
     overflow: hidden;
 }
 
+html {
+  background: url('../img/leaves.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 h1, h2, h3, h4, h6 {
   font-family: 'Kaushan Script', cursive;
 }
@@ -84,24 +92,28 @@ p {
 
 @keyframes colorchange
 {
-  0%   {background: rgb(192, 3, 3)}
-  14%  {background: rgb(194, 111, 3)}
+  0%   {background: rgba(192, 3, 3, 0.4)}
+  14%  {background: rgba(194, 111, 3, 0.4)}
   28%  {background: rgb(219, 235, 4)}
-  42% {background: rgb(2, 170, 24)}
-  56%  {background: rgb(3, 172, 194)}
-  70%  {background: rgb(2, 11, 146)}
-  84%  {background: rgb(194, 3, 121)}
-  100%  {background: rgb(194, 3, 3)}
+  42% {background: rgba(2, 170, 24, 0.4)}
+  56%  {background: rgba(3, 172, 194, 0.4)}
+  70%  {background: rgba(2, 12, 146, 0.4)}
+  84%  {background: rgba(194, 3, 121, 0.4)}
+  100%  {background: rgba(194, 3, 3, 0.4)}
 }
 
 @-webkit-keyframes colorchange
 {
-  0%   {background: rgb(192, 3, 3)}
-  14%  {background: rgb(194, 111, 3)}
+  0%   {background: rgba(192, 3, 3, 0.4)}
+  14%  {background: rgba(194, 111, 3, 0.4)}
   28%  {background: rgb(219, 235, 4)}
-  42% {background: rgb(2, 170, 24)}
-  56%  {background: rgb(3, 172, 194)}
-  70%  {background: rgb(2, 11, 146)}
-  84%  {background: rgb(194, 3, 121)}
-  100%  {background: rgb(194, 3, 3)}
+  42% {background: rgba(2, 170, 24, 0.4)}
+  56%  {background: rgba(3, 172, 194, 0.4)}
+  70%  {background: rgba(2, 12, 146, 0.4)}
+  84%  {background: rgba(194, 3, 121, 0.4)}
+  100%  {background: rgba(194, 3, 3, 0.4)}
+}
+
+.black-box{
+  background-color: rgba(0, 0, 0, 0.514);
 }
