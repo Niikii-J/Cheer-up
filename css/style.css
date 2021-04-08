@@ -148,15 +148,15 @@ p {
 
 .center {
   position: absolute;
-  top: 60%;
-  left: 21%;
+  top: 65%;
+  left: 0;
   right: 0;
   margin-top: -30px;
 }
 
 .carousel {
   position: relative;
-  width: 100%;
+  top: 60%;
   text-align: left;
   font-size: 40px;
   line-height: 60px;
@@ -174,7 +174,7 @@ p {
 .carousel .change_outer {
   position: absolute;
   top: 0;
-  left: 46%;
+  left: 50%;
   text-align: left;
   height: 60px;
   overflow: hidden;
@@ -265,13 +265,16 @@ img {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   p {
     font-weight: bold;
     font-size: 12px;
   }
   p span {
     font-size: 30px;
+  }
+  .carousel {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
