@@ -25,8 +25,13 @@ $time-4: 180s;
   font-family: 'Chivo', sans-serif;
 }
 
-html, body {
-  height: 100%;
+body,
+html {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h6 {
@@ -43,7 +48,64 @@ body {
 	animation: gradient 25s ease infinite;
   animation: colorchange 75s linear 1s infinite; 
 -webkit-animation: colorchange 75s linear 0s infinite alternate;
+  font: 400 1em/1.5 "Neuton"; 
+  color: rgba(255,255,255,.25); 
+  text-align: center; 
+  margin: 0;
 }
+
+//words
+
+p {
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255,255,255,.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+  
+  span {
+
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+
+	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+
+
+//rainbow bg
 
 @keyframes colorchange
 {
@@ -69,6 +131,7 @@ body {
   100%  {background: rgb(194, 3, 3)}
 }
 
+//particles
 .page-bg, .animation-wrapper {
   position: fixed;
   top: 0;
@@ -155,41 +218,24 @@ body {
   z-index: 2;
 }
 
-// Word flip
-.wordCarousel {
-  font-size: 36px;
-  font-weight: 100;
-  color: #eee;
-  div {
-      overflow: hidden;
-      position: relative;
-      float: right;
-      height: 65px;
-      padding-top: 10px;
-      margin-top: -10px;
-      li {
-          font-family: Serif;
-          color: #eee;
-          font-weight: 700;
-          padding: 0 10px;
-          height: 45px;
-          margin-bottom: 45px;
-          display: block;
-      }
+.neons {
+  text-align: center;
+  h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
   }
 }
 
-.flip { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
-
-@keyframes flip {
-  0% { margin-top: -360px; }
-  5% { margin-top: -270px; }
-  25% { margin-top: -270px; }
-  30% { margin-top: -180px; }
-  50% { margin-top: -180px; }
-  55% { margin-top: -90px; }
-  75% { margin-top: -90px; }
-  80% { margin-top: 0px; }
-  99% { margin-top: 0px; }
-  100% { margin-top: -270px; }
+@-webkit-keyframes glow {
+    from {
+     color: #fff;
+   text-shadow: 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2;
+ }
+ 
+ to {
+    color: rgb(29, 25, 25);
+   text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2;
+ }
 }
