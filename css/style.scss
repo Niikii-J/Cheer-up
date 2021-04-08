@@ -39,9 +39,34 @@ body {
   align-items: center;
   font-size: 3rem;
   overflow: hidden;
-  background: linear-gradient(-45deg,rgb(255, 77, 77),orange,yellow,green,blue,indigo,violet);
 	background-size: 400% 400%;
 	animation: gradient 25s ease infinite;
+  animation: colorchange 75s linear 1s infinite; 
+-webkit-animation: colorchange 75s linear 0s infinite alternate;
+}
+
+@keyframes colorchange
+{
+  0%   {background: rgb(192, 3, 3)}
+  14%  {background: rgb(194, 111, 3)}
+  28%  {background: rgb(219, 235, 4)}
+  42% {background: rgb(2, 170, 24)}
+  56%  {background: rgb(3, 172, 194)}
+  70%  {background: rgb(2, 11, 146)}
+  84%  {background: rgb(194, 3, 121)}
+  100%  {background: rgb(194, 3, 3)}
+}
+
+@-webkit-keyframes colorchange
+{
+  0%   {background: rgb(192, 3, 3)}
+  14%  {background: rgb(194, 111, 3)}
+  28%  {background: rgb(219, 235, 4)}
+  42% {background: rgb(2, 170, 24)}
+  56%  {background: rgb(3, 172, 194)}
+  70%  {background: rgb(2, 11, 146)}
+  84%  {background: rgb(194, 3, 121)}
+  100%  {background: rgb(194, 3, 3)}
 }
 
 .page-bg, .animation-wrapper {
@@ -57,28 +82,7 @@ body {
   background-size: cover;
   z-index: -1;
 }
-/*
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}*/
 
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 100%;
-	}
-	100% {
-		background-position: 100% 0%;
-	}
-}
 
 .particle, .particle:after {
   background: transparent;
@@ -149,4 +153,43 @@ body {
   text-align: center;
   color: #fff;
   z-index: 2;
+}
+
+// Word flip
+.wordCarousel {
+  font-size: 36px;
+  font-weight: 100;
+  color: #eee;
+  div {
+      overflow: hidden;
+      position: relative;
+      float: right;
+      height: 65px;
+      padding-top: 10px;
+      margin-top: -10px;
+      li {
+          font-family: Serif;
+          color: #eee;
+          font-weight: 700;
+          padding: 0 10px;
+          height: 45px;
+          margin-bottom: 45px;
+          display: block;
+      }
+  }
+}
+
+.flip { animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite; }
+
+@keyframes flip {
+  0% { margin-top: -360px; }
+  5% { margin-top: -270px; }
+  25% { margin-top: -270px; }
+  30% { margin-top: -180px; }
+  50% { margin-top: -180px; }
+  55% { margin-top: -90px; }
+  75% { margin-top: -90px; }
+  80% { margin-top: 0px; }
+  99% { margin-top: 0px; }
+  100% { margin-top: -270px; }
 }
